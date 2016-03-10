@@ -1,0 +1,68 @@
+#!/bin/sh 
+# 
+# openresty restart
+
+
+
+nginx="/usr/local/openresty/nginx/sbin/nginx" 
+FILE_DIR=`pwd`
+NGINX_CONF_FILE=`pwd`"/conf/nginx.conf" 
+NGINX_PID_FILE=`pwd`"/logs/nginx.pid"
+if [ -e $NGINX_PID_FILE  ]; then
+NGINX_PID=`cat $NGINX_PID_FILE`
+fi
+
+stop(){
+
+	if [ ! -e $NGINX_PID_FILE  ]; then
+	 	echo  "openresty not running"
+	 	exit 0
+	else
+		kill $NGINX_PID;
+	fi
+	
+}
+
+start(){
+	`"$nginx" -p $FILE_DIR -c "$NGINX_CONF_FILE"`
+	if [ ! -e $NGINX_PID_FILE  ]; then
+	 	echo  "openresty start error"
+	 	exit 0
+	fi
+}
+
+restart() {
+	if [ ! -e $NGINX_PID_FILE  ]; then
+	 	echo  "openresty not running"
+	 	exit 0
+	fi 
+ 	kill -HUP $NGINX_PID || echo  "nginx can't reload"
+}
+
+configtest() { 
+ 	$nginx -t -c $NGINX_CONF_FILE 
+} 
+
+case "$1" in 
+
+stop)
+stop && exit 0 
+;;
+
+start)
+start && exit 0
+;;
+
+restart)
+restart && exit 0
+;;
+
+test)
+configtest && exit 0
+
+$1 
+
+
+echo $"Usage: $0 {start|stop|restart|test}" 
+exit 2 
+esac 
