@@ -1,1 +1,1 @@
-ngx.say('hello world');
+local test = {};

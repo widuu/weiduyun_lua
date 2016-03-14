@@ -1,13 +1,82 @@
-2016/03/10 19:39:52 [error] 7437#0: *15 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//test/2.lua": cannot open /Users/widuu/git/weiduyun_lua/app//test/2.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /test/2 HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:41:42 [emerg] 7367#0: invalid number of arguments in "content_by_lua" directive in /Users/widuu/git/weiduyun_lua/conf/nginx.conf:17
-2016/03/10 19:41:44 [error] 7437#0: *16 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//test/2.lua": cannot open /Users/widuu/git/weiduyun_lua/app//test/2.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /test/2 HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:41:47 [error] 7437#0: *16 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//.lua": cannot open /Users/widuu/git/weiduyun_lua/app//.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:41:58 [emerg] 7367#0: unexpected "}" in /Users/widuu/git/weiduyun_lua/conf/nginx.conf:18
-2016/03/10 19:41:59 [error] 7437#0: *16 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//.lua": cannot open /Users/widuu/git/weiduyun_lua/app//.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:42:10 [emerg] 7367#0: unexpected "}" in /Users/widuu/git/weiduyun_lua/conf/nginx.conf:18
-2016/03/10 19:42:11 [error] 7437#0: *16 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//.lua": cannot open /Users/widuu/git/weiduyun_lua/app//.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:43:05 [emerg] 7367#0: unexpected "}" in /Users/widuu/git/weiduyun_lua/conf/nginx.conf:15
-2016/03/10 19:43:07 [error] 7437#0: *16 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//.lua": cannot open /Users/widuu/git/weiduyun_lua/app//.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:57:25 [error] 7437#0: *17 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//.lua": cannot open /Users/widuu/git/weiduyun_lua/app//.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
-2016/03/10 19:57:47 [emerg] 7367#0: unexpected "}" in /Users/widuu/git/weiduyun_lua/conf/nginx.conf:17
-2016/03/10 19:57:49 [error] 7437#0: *17 failed to load external Lua file "/Users/widuu/git/weiduyun_lua/app//.lua": cannot open /Users/widuu/git/weiduyun_lua/app//.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2016/03/13 11:41:31 [error] 5800#0: *279 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:41:31 [error] 5800#0: *279 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:41:31 [error] 5800#0: *280 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:41:31 [error] 5800#0: *280 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:42:04 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
+2016/03/13 11:42:04 [notice] 2848#0: reconfiguring
+2016/03/13 11:42:04 [notice] 2848#0: using the "kqueue" event method
+2016/03/13 11:42:04 [notice] 2848#0: start worker processes
+2016/03/13 11:42:04 [notice] 2848#0: start worker process 5810
+2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:42:04 [notice] 5800#0: gracefully shutting down
+2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:42:04 [notice] 5800#0: exiting
+2016/03/13 11:42:04 [notice] 5800#0: exit
+2016/03/13 11:42:04 [notice] 2848#0: signal 20 (SIGCHLD) received
+2016/03/13 11:42:04 [notice] 2848#0: worker process 5800 exited with code 0
+2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:42:06 [error] 5810#0: *281 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:42:06 [error] 5810#0: *281 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:43:06 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
+2016/03/13 11:43:06 [notice] 2848#0: reconfiguring
+2016/03/13 11:43:06 [notice] 2848#0: using the "kqueue" event method
+2016/03/13 11:43:06 [notice] 2848#0: start worker processes
+2016/03/13 11:43:06 [notice] 2848#0: start worker process 5820
+2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:07 [notice] 5810#0: gracefully shutting down
+2016/03/13 11:43:07 [notice] 5810#0: exiting
+2016/03/13 11:43:07 [notice] 5810#0: exit
+2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:07 [notice] 2848#0: signal 20 (SIGCHLD) received
+2016/03/13 11:43:07 [notice] 2848#0: worker process 5810 exited with code 0
+2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:10 [error] 5820#0: *282 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:43:10 [error] 5820#0: *282 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:43:25 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
+2016/03/13 11:43:25 [notice] 2848#0: reconfiguring
+2016/03/13 11:43:25 [notice] 2848#0: using the "kqueue" event method
+2016/03/13 11:43:25 [notice] 2848#0: start worker processes
+2016/03/13 11:43:25 [notice] 2848#0: start worker process 5828
+2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:25 [notice] 5820#0: gracefully shutting down
+2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:25 [notice] 5820#0: exiting
+2016/03/13 11:43:25 [notice] 5820#0: exit
+2016/03/13 11:43:25 [notice] 2848#0: signal 20 (SIGCHLD) received
+2016/03/13 11:43:25 [notice] 2848#0: worker process 5820 exited with code 0
+2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:43:28 [error] 5828#0: *283 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:43:28 [error] 5828#0: *283 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060", referrer: "http://localhost:6060/"
+2016/03/13 11:44:15 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
+2016/03/13 11:44:15 [notice] 2848#0: reconfiguring
+2016/03/13 11:44:15 [notice] 2848#0: using the "kqueue" event method
+2016/03/13 11:44:15 [notice] 2848#0: start worker processes
+2016/03/13 11:44:15 [notice] 2848#0: start worker process 5837
+2016/03/13 11:44:15 [notice] 5828#0: gracefully shutting down
+2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:44:15 [notice] 5828#0: exiting
+2016/03/13 11:44:15 [notice] 5828#0: exit
+2016/03/13 11:44:15 [notice] 2848#0: signal 20 (SIGCHLD) received
+2016/03/13 11:44:15 [notice] 2848#0: worker process 5828 exited with code 0
+2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
+2016/03/13 11:44:18 [error] 5837#0: *284 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 11:44:18 [error] 5837#0: *284 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060", referrer: "http://localhost:6060/"
+2016/03/13 17:48:19 [error] 5837#0: *285 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/13 17:48:19 [error] 5837#0: *285 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060", referrer: "http://localhost:6060/"
