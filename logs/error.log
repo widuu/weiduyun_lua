@@ -1,82 +1,19 @@
-2016/03/13 11:41:31 [error] 5800#0: *279 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:41:31 [error] 5800#0: *279 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
+
+2016/03/21 15:33:15 [error] 13628#0: *11 lua entry thread aborted: runtime error: /home/widuu/git/weiduyun_lua/app/main.lua:18: attempt to index field 'router' (a nil value)
 stack traceback:
 coroutine 0:
-	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:41:31 [error] 5800#0: *280 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:41:31 [error] 5800#0: *280 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
-stack traceback:
-coroutine 0:
-	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:42:04 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
-2016/03/13 11:42:04 [notice] 2848#0: reconfiguring
-2016/03/13 11:42:04 [notice] 2848#0: using the "kqueue" event method
-2016/03/13 11:42:04 [notice] 2848#0: start worker processes
-2016/03/13 11:42:04 [notice] 2848#0: start worker process 5810
-2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:42:04 [notice] 5800#0: gracefully shutting down
-2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:42:04 [notice] 5800#0: exiting
-2016/03/13 11:42:04 [notice] 5800#0: exit
-2016/03/13 11:42:04 [notice] 2848#0: signal 20 (SIGCHLD) received
-2016/03/13 11:42:04 [notice] 2848#0: worker process 5800 exited with code 0
-2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:42:04 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:42:06 [error] 5810#0: *281 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:42:06 [error] 5810#0: *281 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
-stack traceback:
-coroutine 0:
-	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:43:06 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
-2016/03/13 11:43:06 [notice] 2848#0: reconfiguring
-2016/03/13 11:43:06 [notice] 2848#0: using the "kqueue" event method
-2016/03/13 11:43:06 [notice] 2848#0: start worker processes
-2016/03/13 11:43:06 [notice] 2848#0: start worker process 5820
-2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:07 [notice] 5810#0: gracefully shutting down
-2016/03/13 11:43:07 [notice] 5810#0: exiting
-2016/03/13 11:43:07 [notice] 5810#0: exit
-2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:07 [notice] 2848#0: signal 20 (SIGCHLD) received
-2016/03/13 11:43:07 [notice] 2848#0: worker process 5810 exited with code 0
-2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:07 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:10 [error] 5820#0: *282 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:43:10 [error] 5820#0: *282 lua entry thread aborted: runtime error: /Users/widuu/git/weiduyun_lua/app/main.lua:19: attempt to call method 'widuu' (a nil value)
-stack traceback:
-coroutine 0:
-	/Users/widuu/git/weiduyun_lua/app/main.lua: in function </Users/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:43:25 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
-2016/03/13 11:43:25 [notice] 2848#0: reconfiguring
-2016/03/13 11:43:25 [notice] 2848#0: using the "kqueue" event method
-2016/03/13 11:43:25 [notice] 2848#0: start worker processes
-2016/03/13 11:43:25 [notice] 2848#0: start worker process 5828
-2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:25 [notice] 5820#0: gracefully shutting down
-2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:25 [notice] 5820#0: exiting
-2016/03/13 11:43:25 [notice] 5820#0: exit
-2016/03/13 11:43:25 [notice] 2848#0: signal 20 (SIGCHLD) received
-2016/03/13 11:43:25 [notice] 2848#0: worker process 5820 exited with code 0
-2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:25 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:43:28 [error] 5828#0: *283 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:43:28 [error] 5828#0: *283 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060", referrer: "http://localhost:6060/"
-2016/03/13 11:44:15 [notice] 2848#0: signal 1 (SIGHUP) received, reconfiguring
-2016/03/13 11:44:15 [notice] 2848#0: reconfiguring
-2016/03/13 11:44:15 [notice] 2848#0: using the "kqueue" event method
-2016/03/13 11:44:15 [notice] 2848#0: start worker processes
-2016/03/13 11:44:15 [notice] 2848#0: start worker process 5837
-2016/03/13 11:44:15 [notice] 5828#0: gracefully shutting down
-2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:44:15 [notice] 5828#0: exiting
-2016/03/13 11:44:15 [notice] 5828#0: exit
-2016/03/13 11:44:15 [notice] 2848#0: signal 20 (SIGCHLD) received
-2016/03/13 11:44:15 [notice] 2848#0: worker process 5828 exited with code 0
-2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:44:15 [notice] 2848#0: signal 23 (SIGIO) received
-2016/03/13 11:44:18 [error] 5837#0: *284 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 11:44:18 [error] 5837#0: *284 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060", referrer: "http://localhost:6060/"
-2016/03/13 17:48:19 [error] 5837#0: *285 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
-2016/03/13 17:48:19 [error] 5837#0: *285 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060", referrer: "http://localhost:6060/"
+	/home/widuu/git/weiduyun_lua/app/main.lua: in function </home/widuu/git/weiduyun_lua/app/main.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/21 15:35:36 [notice] 13627#0: signal 1 (SIGHUP) received, reconfiguring
+2016/03/21 15:35:36 [notice] 13627#0: reconfiguring
+2016/03/21 15:35:36 [notice] 13627#0: using the "epoll" event method
+2016/03/21 15:35:36 [notice] 13627#0: start worker processes
+2016/03/21 15:35:36 [notice] 13627#0: start worker process 13761
+2016/03/21 15:35:36 [notice] 13628#0: gracefully shutting down
+2016/03/21 15:35:36 [notice] 13628#0: exiting
+2016/03/21 15:35:36 [notice] 13628#0: exit
+2016/03/21 15:35:36 [notice] 13627#0: signal 17 (SIGCHLD) received
+2016/03/21 15:35:36 [notice] 13627#0: worker process 13628 exited with code 0
+2016/03/21 15:35:36 [notice] 13627#0: signal 29 (SIGIO) received
+2016/03/21 15:35:39 [error] 13761#0: *12 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6060"
+2016/03/21 15:35:39 [error] 13761#0: *12 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060"
+2016/03/21 15:35:39 [error] 13761#0: *12 [lua] request.lua:22: debug(): this is info, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6060"

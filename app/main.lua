@@ -15,7 +15,7 @@ local http_method = ngx.req.get_method()
 --      ngx.say(k..'-'..v)
 --  end
 local application = app:new()
-application.router:debug('this is info');
+application.request:debug('this is info');
 application(1)
 
 -- request:new()
